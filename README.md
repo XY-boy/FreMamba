@@ -14,4 +14,15 @@ to integrate the Vision State Space Model (Mamba) for RSI-SR, which specializes 
 >
 
 ### 🌱 Overall
-<img src="fig/network.png" width="500px">
+<div align=center>
+<img src="fig/network.png" width="700px">
+</div>
+
+## Install
+```
+git clone https://github.com/XY-boy/FreMamba.git
+```
+
+## 🧩 Requirements
+
+
