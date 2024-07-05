@@ -38,7 +38,7 @@ Please download the following remote sensing benchmarks:
 > * mamba_ssm==1.0.1
 
 ### Test
-- **Step I.**  Use the structure below to prepare your dataset.
+- **Step I.**  Use the structure below to prepare your dataset, e.g., DOTA, and DIOR.
 /xxxx/xxx/ (your data path)
 ```
 /GT/ 
@@ -50,8 +50,9 @@ Please download the following remote sensing benchmarks:
    /···.png  
    /099.png  
 ```
-- **Step II.**  Change the `--data_dir` to your data path. Change the `--pretrained_sr` to your pre-trained model path. 
-- **Step III.**  Run the eval_4x.py
+- **Step II.**  Change the `--data_dir` to your data path.
+- **Step III.**  Change the `--pretrained_sr` to your pre-trained model path. 
+- **Step IV.**  Run the eval_4x.py
 ```
 python eval_4x.py
 ```
