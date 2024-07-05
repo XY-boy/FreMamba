@@ -24,6 +24,7 @@ to integrate the Vision State Space Model (Mamba) for RSI-SR, which specializes 
 ```
 git clone https://github.com/XY-boy/FreMamba.git
 ```
+
 ## 🎁 Dataset
 Please download the following remote sensing benchmarks:
 | Data Type | [AID](https://captain-whu.github.io/AID/) | [DOTA-v1.0](https://captain-whu.github.io/DOTA/dataset.html) | [DIOR](https://www.sciencedirect.com/science/article/pii/S0924271619302825) | [NWPU-RESISC45](https://ieeexplore.ieee.org/abstract/document/7891544)
@@ -68,7 +69,7 @@ python train_4x.py
 ## Acknowledgement
 Our work is built upon [MambaIR](https://github.com/csguoh/MambaIR). Thanks to the author for sharing this awesome work!
 
-## 🥰 Citation
+### 🥰 Citation
 If you find our work helpful in your research, please consider citing it!
 ```
 @ARTICLE{xiao2024fmsr,
