@@ -31,7 +31,7 @@ Please download the following remote sensing benchmarks:
 |Training | [Download](https://captain-whu.github.io/AID/) | None | None | None |
 |Testing | [Download](https://captain-whu.github.io/AID/) | [Download](https://captain-whu.github.io/DOTA/dataset.html) | [Download](https://drive.google.com/drive/folders/1UdlgHk49iu6WpcJ5467iT-UqNPpx__CC) | [Download](https://onedrive.live.com/?authkey=%21AHHNaHIlzp%5FIXjs&id=5C5E061130630A68%21107&cid=5C5E061130630A68&parId=root&parQt=sharedby&o=OneUp)
 
-### 🧩 Requirements
+## 📃 Requirements
 > * CUDA 11.1
 > * Python 3.9.13
 > * PyTorch 1.9.1
@@ -39,6 +39,7 @@ Please download the following remote sensing benchmarks:
 > * causal_conv1d==1.0.0
 > * mamba_ssm==1.0.1
 
+## 🧩 Usage
 ### Test
 - **Step I.**  Use the structure below to prepare your dataset, e.g., DOTA, and DIOR.
 /xxxx/xxx/ (your data path)
@@ -67,7 +68,7 @@ python train_4x.py
 ## Acknowledgement
 Our work is built upon [MambaIR](https://github.com/csguoh/MambaIR). Thanks to the author for sharing this awesome work!
 
-### 🥰 Citation
+## 🥰 Citation
 If you find our work helpful in your research, please consider citing it!
 ```
 @ARTICLE{xiao2024fmsr,
