@@ -10,7 +10,7 @@ from torch.autograd import Variable
 from torch.utils.data import DataLoader
 import math
 # ---load model arc---
-from model_archs.TTST_arc import TTST as net
+from model_archs.fremamba import FreMamba as net
 from dataload.data import get_training_set, get_eval_set
 import numpy as np
 import socket
@@ -34,13 +34,13 @@ parser.add_argument('--data_dir', type=str, default='D:/SISR/Dataset/train')
 parser.add_argument('--val_dir', type=str, default='./AID-tiny/')  # val while training
 
 parser.add_argument('--data_augmentation', type=bool, default=True)
-parser.add_argument('--model_type', type=str, default='ttst')
+parser.add_argument('--model_type', type=str, default='fmsr')
 parser.add_argument('--patch_size', type=int, default=64, help='Size of cropped LR image')
 parser.add_argument('--residual', type=bool, default=False, help='Use global resudial or not')
-parser.add_argument('--pretrained_sr', default='saved_models/ttst/xx.pth', help='sr pretrained base model')
+parser.add_argument('--pretrained_sr', default='saved_models/fmsr/xx.pth', help='sr pretrained base model')
 parser.add_argument('--pretrained', type=bool, default=False)
-parser.add_argument('--save_folder', default='saved_models/ttst/', help='Location to save checkpoint models')
-parser.add_argument('--log_folder', default='tb_logs/ttst/', help='Location to save checkpoint models')
+parser.add_argument('--save_folder', default='saved_models/fmsr/', help='Location to save checkpoint models')
+parser.add_argument('--log_folder', default='tb_logs/fmsr/', help='Location to save checkpoint models')
 
 opt = parser.parse_args()
 gpus_list = range(opt.gpus)
