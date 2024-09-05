@@ -600,7 +600,7 @@ class BasicLayer(nn.Module):
 
 # @ARCH_REGISTRY.register()
 class FreMamba(nn.Module):
-    r""" MambaIR Model
+    r""" Our FreMamba Mainly borrows from MambaIR Model
            A PyTorch impl of : `A Simple Baseline for Image Restoration with State Space Model `.
 
        Args:
