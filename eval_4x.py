@@ -9,7 +9,7 @@ import torchvision.transforms as transform
 from os import listdir
 import math
 # ---load model architecture---
-from model_archs.TTST_arc import TTST
+from model_archs.fremamba import FreMamba
 import glob
 import numpy as np
 import socket
@@ -28,8 +28,8 @@ parser.add_argument('--gpus', default=1, type=int, help='number of gpu')
 
 parser.add_argument('--data_dir', type=str, default='D:/SISR/Dataset/test/DIOR1000')
 
-parser.add_argument('--model_type', type=str, default='ttst')
-parser.add_argument('--pretrained_sr', default='saved_models/ttst_4x.pth', help='sr pretrained base model')
+parser.add_argument('--model_type', type=str, default='fmsr')
+parser.add_argument('--pretrained_sr', default='saved_models/fmsr_4x.pth', help='sr pretrained base model')
 parser.add_argument('--save_folder', default='results/', help='Location to save checkpoint models')
 
 opt = parser.parse_args()
@@ -62,7 +62,7 @@ def print_network(net):
 torch.cuda.manual_seed(opt.seed)
 device = 'cuda:0'
 print('===> Building model ', opt.model_type)
-model = TTST()
+model = FreMamba()
 model = torch.nn.DataParallel(model, device_ids=gpus_list)
 print('---------- Networks architecture -------------')
 print_network(model)
