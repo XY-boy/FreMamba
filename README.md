@@ -75,7 +75,7 @@ If you find our work helpful in your research, please consider citing it!
   journal={IEEE Transactions on Multimedia}, 
   title={Frequency-Assisted Mamba for Remote Sensing Image Super-Resolution}, 
   year={2024},
-  volume={},
+  volume={26},
   number={},
   pages={1-14},
 }
