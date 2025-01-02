@@ -79,6 +79,7 @@ If you find our work helpful in your research, please consider citing it!
   volume={26},
   number={},
   pages={1-14},
+  doi={10.1109/TMM.2024.3521798}
 }
 ```
 
