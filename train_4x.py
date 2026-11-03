@@ -104,7 +104,7 @@ if opt.pretrained:
     print('load model', model_name)
     if os.path.exists(model_name):
         # model= torch.load(model_name, map_location=lambda storage, loc: storage)
-        model.load_state_dict(torch.load(model_name, map_location=lambda storage, loc: storage))
+        model.load_state_dict(torch.load(model_name, map_location=lambda storage, loc: storage, weights_only=True))
         print('Pre-trained SR model is loaded.')
 L1_criterion = nn.L1Loss()
 L1_criterion = L1_criterion.cuda(gpus_list[0])

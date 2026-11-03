@@ -71,7 +71,7 @@ model = model.cuda(gpus_list[0])
 model_name = os.path.join(opt.pretrained_sr)
 if os.path.exists(model_name):
     # model= torch.load(model_name, map_location=lambda storage, loc: storage)
-    model.load_state_dict(torch.load(model_name))
+    model.load_state_dict(torch.load(model_name, weights_only=True))
     print('Pre-trained SR model is loaded.')
 else:
     print('No pre-trained model!!!!')
